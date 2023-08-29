@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 const routes = require("./routes/router.js");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const cookieParser = require("cookie-parser");
+// const cookieParser = require("cookie-parser");
 
 dotenv.config();
 
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb" }));
 app.use(bodyParser.json());
-app.use(cookieParser());
+// app.use(cookieParser());
 
 routes(app);
 
