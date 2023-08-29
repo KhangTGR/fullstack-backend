@@ -21,6 +21,11 @@ const productSchema = new mongoose.Schema(
     //   __v: { type: Number, required: true },
     // },
     image: { type: String, required: true },
+    // vendor: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "Vendor",
+    //   required: true,
+    // },
   },
   {
     timestamps: true,

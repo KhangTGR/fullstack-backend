@@ -3,6 +3,7 @@ const ProductRouter = require("./customer/productRoutes.js");
 const OrderRouter = require("./customer/orderRoutes.js");
 
 const VendorRouter = require("./vendor/vendorRoutes.js");
+const VendorProductRouter = require("./vendor/productRoutes.js");
 
 const routes = (app) => {
   // User/Customer routes
@@ -12,6 +13,7 @@ const routes = (app) => {
 
   // Vendor routes
   app.use("/api/vendor/user", VendorRouter);
+  app.use("/api/vendor/product", VendorProductRouter);
 };
 
 module.exports = routes;
